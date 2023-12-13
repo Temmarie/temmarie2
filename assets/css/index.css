@@ -2,14 +2,11 @@ body {
     font-family: Quicksand, sans-serif;
     background-color: #121631;
     color: antiquewhite;
+    padding-top: 56px; 
 }
 
 .mint {
     color: #05D3A2;
-}
-
-.purple{
-    color: #7432F9;
 }
 
 
@@ -40,10 +37,15 @@ body {
     color: antiquewhite;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #05D3A2;
+.dark1 .navbar-nav .nav-link.active .nav-link,
+.dark1 .navbar-nav .nav-link:hover {
+    color: #05D3A2 !important;
 }
+
+.dark1 .navbar-nav .nav-link.active {
+  color: #05D3A2 !important; /* Set your desired mint color */
+}
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: antiquewhite; /* Set the color for all links */
@@ -109,6 +111,10 @@ body {
 }
 
   /* about */
+
+  #about{
+    background-color: #0E1144;
+  }
 
   #mu-about {
     display: inline;
@@ -201,9 +207,76 @@ body {
 .progress-bar .progress {
     height: 100%;
     line-height: 20px;
-    text-align: center;
-    color: #fff;
+    justify-content: center;
+    font-weight: bold;
+    color: antiquewhite;
     border-radius: 10px;
     background-color: #05D3A2; /* Set your desired progress bar color */
     transition: width 0.8s ease-in-out;
+}
+
+
+/* services */
+
+.mu-service-header {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.mu-heading-title {
+  margin-bottom: 15px;
+}
+
+.mu-service-content {
+  margin-top: 70px;
+}
+
+.mu-service-content-single {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 25px 10px;
+}
+
+.mu-service-icon-box {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  color: #05D3A2; /* Mint color for icon */
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+.mu-service-icon-box i {
+  color: #05D3A2;
+}
+
+.mu-service-content-single h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.mu-service-content-single p {
+  font-size: 14px;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+} 
+
+#service-content{
+  background-color: #0E1144;
+  border-radius: 15px;
+  height:  250px;
+}
+
+
+
+@media (min-width: 992px) {
+  body {
+      padding-top: 68px; /* Adjust the value based on your fixed navbar height */
+  }
 }

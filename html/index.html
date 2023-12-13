@@ -17,11 +17,12 @@
    
 
     <!--nAVABAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark dark1">
+    <nav class="navbar navbar-expand-lg dark1 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home" style="color: antiquewhite;">Temmarie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(250, 235, 215)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e');"></span>
+      
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> <!-- Add ms-auto class here -->
@@ -52,12 +53,12 @@
 
     <!--HOME-->
 
-    <section class="container-fluid dark4 min-vh-100" id="#home">
+    <section class="container-fluid dark4 min-vh-100 mt-5" id="home">
         <div class="row min-vh-100">
             <div class="col-md-4 d-flex justify-content-center align-items-center">
                 <img src="../assets/images/coder.svg" alt="coder-girl">
             </div>
-            <div class="col-md-8 d-flex flex-columnjustify-content-center align-items-center">
+            <div class="col-md-8 col-12 d-flex flex-column justify-content-center align-items-center">
                 <section id="mu-featured-slider">
                     <div class="container">
                         <div class="row">
@@ -83,7 +84,7 @@
     
                                     <div class="mu-featured-content">
                                         <p>Hi, I'm an Aspiring Software Engineer who is addicted to books and learning new languages</p>
-                                        <a href="#mu-portfolio" class="btn btn-outline-light" style="color: antiquewhite;">HIRE ME</a>
+                                        <a href="#mu-portfolio" class="btn hire">HIRE ME</a>
                                     </div>
     
                                 </div>
@@ -98,15 +99,75 @@
 
     <!-- About me -->
 
-    <section class="container-fluid bg-primary min-vh-100 mt-3">
-        <div class="row min-vh-100">
+    <section class="container min-vh-100 mt-3" id="about">
+        <div class="row">
             <div class="mu-about-header">
                 <h2 class="mu-heading-title">ABOUT ME</h2>
-                <span class="mu-header-dot"></span>
+                <div class="mu-header-dot"></div>
                 <p>My name is Grace Ekunola. I am a <strong>Full Stack Developer, a Technical Writer</strong> and a <strong>Language
                     Enthusiast</strong>. I believe in continually improving myself in all aspects of life.</p>
               </div>
-    
+        </div>
+
+       <!-- skills -->
+           <!-- Start skills progress bar -->
+          
+           <div class="container mt-5">
+            <h2 class="fw-bold text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill">
+                        <span>Html5</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;  text-align: center;">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill">
+                        <span>Ruby</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ruby On Rails</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Technical Writing</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </section>

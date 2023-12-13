@@ -1,0 +1,34 @@
+body {
+    font-family: Quicksand, sans-serif;
+}
+
+.mint {
+    color: #05D3A2;
+}
+
+.purple{
+    color: #7432F9;
+}
+
+
+.dark1 {
+    background-color: #0F1126;
+    color: antiquewhite;
+}
+
+.dark2 {
+    color: #0E1144;
+}
+
+.dark3{
+    color: #191E48;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #05D3A2;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set the color for all links */
+}

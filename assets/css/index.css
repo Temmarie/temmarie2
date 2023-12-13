@@ -1,5 +1,7 @@
 body {
     font-family: Quicksand, sans-serif;
+    background-color: #121631;
+    color: antiquewhite;
 }
 
 .mint {
@@ -24,11 +26,121 @@ body {
     color: #191E48;
 }
 
+.dark4{
+    background-color: #121631;
+    color: antiquewhite;
+}
+
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #05D3A2;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: white; /* Set the color for all links */
+    color: antiquewhite; /* Set the color for all links */
 }
+
+/* //home */
+
+.mu-social-media i {
+    color: antiquewhite;
+}
+
+.mu-social-media h3 {
+    margin-top: 20px;
+  }
+
+.mu-social-media a {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 15px;
+    border: 1px solid #333;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    margin: 5px 5px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .mu-social-media {
+    display: inline;
+    float: left;
+    width: 100%;
+  }
+
+  .mu-featured-slider p {
+    font-size: 40px; 
+  }
+
+  .mu-featured-slider p,
+  #typed,
+  #typed span {
+    font-family: JetBrains Mono, monospace;
+    font-size: 24px;
+    color: #05D3A2;
+  }
+
+  .mu-featured-content{
+    font-size: larger;
+  }
+
+  /* about */
+
+  #mu-about {
+    display: inline;
+    float: left;
+    width: 100%;
+  }
+  
+  .mu-about-area {
+    display: inline;
+    float: left;
+    padding: 100px 0;
+    width: 100%;
+  }
+  
+  .mu-about-header {
+    display: inline;
+    float: left;
+    text-align: center;
+    padding: 0 120px;
+    width: 100%;
+  }
+  
+  .mu-heading-title {
+    color: antiquewhite;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .mu-about-content {
+    display: inline;
+    float: left;
+    margin-top: 70px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .mu-about-content-left {
+    display: inline;
+    float: left;
+    width: 100%;
+  }
+  
+  .mu-about-content-right {
+    display: inline;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .mu-header-dot {
+    border-radius: 0;
+    height: 3px;
+    width: 75px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  

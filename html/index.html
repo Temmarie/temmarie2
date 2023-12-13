@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../assets/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Temmarie's</title>
 
   </head>
@@ -18,7 +19,7 @@
     <!--nAVABAR-->
     <nav class="navbar navbar-expand-lg navbar-dark dark1">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Temmarie</a>
+            <a class="navbar-brand" href="#home" style="color: antiquewhite;">Temmarie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,21 +52,63 @@
 
     <!--HOME-->
 
-    <section class="container-fluid">
-       
-        <div class="row d-flex">
-            <div class="col-md-4 image bg-info">Food</div>
-            <div class="col-md-8 bg-primary">
-                <div class="home-text">
-                    <h1>Temmarie</h1>
-                    <p>Web Developer</p>
-                    <button class="btn btn-primary">Hire Me</button>
-                </div>
+    <section class="container-fluid dark4 min-vh-100" id="#home">
+        <div class="row min-vh-100">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="../assets/images/coder.svg" alt="coder-girl">
             </div>
+            <div class="col-md-8 d-flex flex-columnjustify-content-center align-items-center">
+                <section id="mu-featured-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-featured-area">
+                                    <h1>Grace Ekunola</h1>
+                                    <div class="mu-social-media up">
+                                        <a href="https://twitter.com/TemmarieW" target="_blank"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/in/ekunola-grace/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://github.com/Temmarie" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </div>
+    
+                                    <!-- Start text slide -->
+                                    <div class="mu-featured-slider-wrapper">
+                                        <div class="mu-featured-slider" id="typed-strings">
+                                            <p id="slider">&lt; I am a <span>FullStack Developer</span> &gt;</p>
+                                            <p>&lt; I am a <span>Software Engineer</span> &gt;</p>
+                                            <p>&lt; I am a <span>Linguist Enthusiast</span> &gt;</p>
+                                        </div>
+                                        <span id="typed"></span>
+                                    </div>
+                                    <!-- Start text slide -->
+    
+                                    <div class="mu-featured-content">
+                                        <p>Hi, I'm an Aspiring Software Engineer who is addicted to books and learning new languages</p>
+                                        <a href="#mu-portfolio" class="btn btn-outline-light" style="color: antiquewhite;">HIRE ME</a>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </section>
+    
 
-    <section class="features">
-        add cards here
+    <!-- About me -->
+
+    <section class="container-fluid bg-primary min-vh-100 mt-3">
+        <div class="row min-vh-100">
+            <div class="mu-about-header">
+                <h2 class="mu-heading-title">ABOUT ME</h2>
+                <span class="mu-header-dot"></span>
+                <p>My name is Grace Ekunola. I am a <strong>Full Stack Developer, a Technical Writer</strong> and a <strong>Language
+                    Enthusiast</strong>. I believe in continually improving myself in all aspects of life.</p>
+              </div>
+    
+        </div>
+        
     </section>
 
 

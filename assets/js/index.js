@@ -107,3 +107,53 @@ $(document).ready(function(){
       arrows: false, // Hide navigation arrows
   });
 });
+
+
+//form
+
+// $(document).ready(function () {
+//   // Intercept the form submission
+//   $("#ajax-contact").submit(function (e) {
+//       e.preventDefault();
+
+//       // Get form data
+//       var formData = $(this).serialize();
+
+//       // Submit the form using Ajax
+//       $.ajax({
+//           type: "POST",
+//           url: "mailer.php",
+//           data: formData,
+//           dataType: "json",
+//           success: function (response) {
+//               if (response.status === "success") {
+//                   // Display success message
+//                   $("#form-messages").html('<div class="alert alert-success">' + response.message + '</div>');
+//               } else {
+//                   // Display error message
+//                   $("#form-messages").html('<div class="alert alert-danger">' + response.message + '</div>');
+//               }
+//           }
+//       });
+//   });
+// });
+
+
+$(document).ready(function() {
+  $('#ajax-contact').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+          type: 'POST',
+          url: 'mailer.php', // Update this with your actual PHP script URL
+          data: $(this).serialize(),
+          success: function(response) {
+              $('#confirmation-message').html(response).addClass('text-success');
+              // Additional actions you may want to perform
+          },
+          error: function(error) {
+              $('#confirmation-message').html('Error: ' + error.responseText).addClass('text-danger');
+              // Additional actions you may want to perform
+          }
+      });
+  });
+});

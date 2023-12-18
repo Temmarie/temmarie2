@@ -5,10 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> -->
+
+
+      <!-- Bootstrap 5 CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+      <!-- Font Awesome 5 CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  
+      <!-- Slick Slider CSS -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  
+      <!-- Your custom CSS -->
     <link type="text/css" rel="stylesheet" href="../assets/css/index.css">
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Temmarie's</title>
 
@@ -29,7 +45,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item"> 
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
@@ -37,6 +53,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
@@ -176,10 +195,7 @@
     </section>
 
 
-
     <!-- Services -->
-
-
     <section class="container-fluid p-5 min-vh-100" id="services">
         <div class="container">
             <div class="row">
@@ -250,17 +266,219 @@
             </div>
         </div>
     </section>
+
+
+
+    <!-- Start Portfolio Content -->
+
+    <section class="container-fluid p-5 min-vh-100" id="portfolio">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="mu-service-header">
+                    <h2 class="mu-heading-title">MY PORTFOLIO</h2>
+                    <span class="mu-header-dot"></span>
+                </div>
+            </div>
+    
+            <!-- Filter Buttons -->
+            <div class="row mb-4 text-center">
+                <div class="col-md-12">
+                    <button class="btn filter-button" data-filter="all">All</button>
+                    <button class="btn filter-button" data-filter="web">Web App</button>
+                    <button class="btn filter-button" data-filter="mobile">Mobile Apps</button>
+                    <button class="btn filter-button" data-filter="ui">UI/UX</button>
+                    <button class="btn filter-button" data-filter="technical-writing">Technical Writing</button>
+                    <!-- Add more filter buttons as needed -->
+                </div>
+            </div>
+            
+    
+            <!-- Project Cards -->
+            <div class="row portfolio">
+                <!-- Example Project Card -->
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 web">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="hover-container">
+                            <img src="../assets/images/todolist.png" class="card-img-top">
+                            <div class="project-info">
+                                <h5 class="card-title">Todo-List-App</h5>
+                                <p class="card-text">A simple todo list built with JavaScript using local storage.</p>
+                                <p>JavaScript | Webpack</p>
+                                <a href="https://rawcdn.githack.com/Temmarie/Todo-List-App/253154eb58cf1b4c683b425edcc5aff6dbc423b1/dist/index.html" target="_blank">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/Temmarie/Todo-List-App" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- testimonials -->
+
+
+
+    <section class="container-fluid p-5 min-vh-100" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-testimonials-block">
+                        <div class="mu-service-header">
+                            <h2 class="mu-heading-title">TESTIMONIALS</h2>
+                            <span class="mu-header-dot"></span>
+                        </div>
+                        <ul class="mu-testimonial-slide">
+                            <!-- Testimonial 1 -->
+                            <li>
+                                <i class="fa fa-quote-right mu-quote-icon"></i>
+                                <p>Grace proved to be essential to the team and contributed significantly to the development of the company. When you really get to connect with her, you'll discover an amazing person with exceptional skills! Grace leads by example and many people at Bulwark find her enthusiasm and dedication both inspiring and motivating. Energetic and broad-minded Trainee - that's her! Detail-oriented team player. Grace possesses a winning combination of solid tech skills and business sense, I learned a great deal from her. I absolutely would recommend her as a Trainee.</p>
+                                <h5 class="mu-ct-name"> - Ekunola Ezekiel</h5>
+                                <span class="mu-ct-title">FrontEnd Engineer, Neighborhoods.com</span>
+                            </li>
+                            <!-- Testimonial 2 -->
+                            <li>
+                                <i class="fa fa-quote-right mu-quote-icon"></i>
+                                <p>Grace is hardworking, focused, and a results-oriented programmer who is kind and supportive to everyone.</p>
+                                <h5 class="mu-ct-name"> - Marylene Sawyer</h5>
+                                <span class="mu-ct-title">Full-Stack Engineer</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
     
 
 
+            <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <!-- Bootstrap 5 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Slick Slider JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- Your custom JS -->
+        <script src="../assets/js/index.js"></script>
+
+          
+          <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+
+          <script src="../assets/js/index.js"></script>
 
 
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../assets/js/index.js"></script>
   </body>
 </html>

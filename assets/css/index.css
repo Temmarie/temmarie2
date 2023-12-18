@@ -274,6 +274,89 @@ body {
 }
 
 
+/* portfolio */
+
+.project-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  background-color: #0E1144;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.hover-container:hover .project-info {
+  opacity: 0.8;
+}
+
+.filter-button {
+  background-color: #05D3A2;
+  color: antiquewhite;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid antiquewhite; /* Outline color */
+  border-radius: 50%;
+  padding: 6px 7px 4px;
+  font-size: 12px;
+  color: antiquewhite;
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition effect */
+}
+
+.project-info a:hover {
+  color: #0E1144; /* Dark navy blue */
+  background-color: antiquewhite;
+}
+
+#portfolio {
+  background-color: #0E1144;
+}
+
+/* testimonials */
+#mu-testimonials {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.mu-quote-icon {
+  font-size: 36px;
+  color: #05D3A2;
+}
+
+.mu-testimonials-block {
+  max-width: 800px;
+  margin: auto;
+}
+
+.mu-testimonial-slide li {
+  border: 1px solid antiquewhite;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.mu-ct-name {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.mu-ct-title {
+  font-size: 14px;
+}
+
+.slick-dots {
+  display: none !important; /* Hide navigation dots */
+}
+
+.slick-prev, .slick-next {
+  display: none !important; /* Hide navigation arrows */
+}
 
 @media (min-width: 992px) {
   body {

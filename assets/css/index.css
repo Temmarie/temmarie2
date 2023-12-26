@@ -276,7 +276,7 @@ body {
 
 /* portfolio */
 
-.project-info {
+ .project-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -301,22 +301,26 @@ body {
 .project-info a {
   display: inline-block;
   margin-right: 10px;
-  border: 1px solid antiquewhite; /* Outline color */
+  border: 1px solid antiquewhite; 
   border-radius: 50%;
   padding: 6px 7px 4px;
   font-size: 12px;
   color: antiquewhite;
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition effect */
+  transition: color 0.3s, background-color 0.3s; 
+
 }
 
 .project-info a:hover {
-  color: #0E1144; /* Dark navy blue */
+  color: #0E1144;
   background-color: antiquewhite;
 }
 
 #portfolio {
   background-color: #0E1144;
-}
+} 
+
+
+
 
 /* testimonials */
 #mu-testimonials {

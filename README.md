@@ -1,4 +1,4 @@
-
+ssh -i ~/.ssh/id_rsa  azureuser@10.0.1.4
 #Create the root cert
 $cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
 -Subject "CN=AzureRootCert" -KeyExportPolicy Exportable `

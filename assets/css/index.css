@@ -323,7 +323,9 @@ body {
   background-color: #0E1144;
 } 
 
-
+.card-title {
+  color: #05D3A2;
+}
 
 
 /* testimonials */

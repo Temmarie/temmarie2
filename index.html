@@ -587,7 +587,7 @@
 
                                 <div class="mu-contact-bottom">
                                     <div id="form-messages"></div>
-                                    <form id="ajax-contact" method="post" action="./mailer.php" class="mu-contact-form">
+                                    <form id="ajax-contact" action="https://formspree.io/f/xjkvwbdv" method="POST" class="mu-contact-form">
                                         <div class="mb-3">
                                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                         </div>
@@ -625,34 +625,6 @@
 
     <!-- Your custom JS -->
     <script src="../assets/js/index.js"></script>
-
-
-    <script>
-        $(document).ready(function() {
-            $('#ajax-contact').on('submit', function(event) {
-                event.preventDefault();
-        
-                // Serialize form data
-                const formData = $(this).serialize();
-        
-                // Send form data using AJAX
-                $.ajax({
-                    type: 'POST',
-                    url: './mailer.php',
-                    data: formData
-                })
-                .done(function(response) {
-                    $('#confirmation-message').html(`<p>${response}</p>`);
-                    $('#ajax-contact')[0].reset();
-                })
-                .fail(function(data) {
-                    $('#confirmation-message').html('<p>There was an error with your submission. Please try again later.</p>');
-                });
-            });
-        });
-        </script>
-        
-
 
   </body>
 </html>

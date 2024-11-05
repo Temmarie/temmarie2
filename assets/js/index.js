@@ -88,29 +88,29 @@ $(document).ready(function () {
       arrows: false, // Hide navigation arrows
     });
   
-    // Intercept the form submission
-    $("#ajax-contact").submit(function (e) {
-      e.preventDefault();
+    // // Intercept the form submission
+    // $("#ajax-contact").submit(function (e) {
+    //   e.preventDefault();
   
-      // Get form data
-      var formData = $(this).serialize();
+    //   // Get form data
+    //   var formData = $(this).serialize();
   
-      // Submit the form using Ajax
-      $.ajax({
-        type: "POST",
-        url: "mailer.php", // Update with your server URL
-        data: formData,
-        dataType: "json",
-        success: function (response) {
-          if (response.status === "success") {
-            $("#form-messages").html('<div class="alert alert-success">' + response.message + '</div>');
-          } else {
-            $("#form-messages").html('<div class="alert alert-danger">' + response.message + '</div>');
-          }
-        },
-        error: function (xhr, status, error) {
-          $("#form-messages").html('<div class="alert alert-danger">An error occurred: ' + xhr.responseText + '</div>');
-        }
-      });
-    });
+    //   // Submit the form using Ajax
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "http://localhost:5501/mailer.php", // Update with your server URL
+    //     data: formData,
+    //     dataType: "json",
+    //     success: function (response) {
+    //       if (response.status === "success") {
+    //         $("#form-messages").html('<div class="alert alert-success">' + response.message + '</div>');
+    //       } else {
+    //         $("#form-messages").html('<div class="alert alert-danger">' + response.message + '</div>');
+    //       }
+    //     },
+    //     error: function (xhr, status, error) {
+    //       $("#form-messages").html('<div class="alert alert-danger">An error occurred: ' + xhr.responseText + '</div>');
+    //     }
+    //   });
+    // });
   });

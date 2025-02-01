@@ -323,6 +323,9 @@ body {
   opacity: 1;
 }
 
+.hover-container img {
+  height: 323px;
+}
 /* Title and Text Styling */
 .project-info h5 {
   font-size: 1.2rem;
@@ -452,6 +455,10 @@ body {
   background-color: #0E1144;
   border: 1px solid antiquewhite;
   border-radius: 5px;
+}
+
+#blog-cards img {
+  height: 250px; 
 }
 
 .read-more a{
